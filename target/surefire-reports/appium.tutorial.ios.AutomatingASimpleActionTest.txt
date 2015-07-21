@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: appium.tutorial.ios.AutomatingASimpleActionTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 206.339 sec <<< FAILURE! - in appium.tutorial.ios.AutomatingASimpleActionTest
+one(appium.tutorial.ios.AutomatingASimpleActionTest)  Time elapsed: 43.946 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.1', revision: '68b415adb11acca4286be45124325cc36cfc4a51', time: '2014-05-29 09:21:55'
+System info: host: 'XMNA014.local', ip: '10.32.36.58', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_20'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities [{app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, networkConnectionEnabled=false, warnings={}, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, desired={app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, appium-version=1.4.1, platformVersion=8.3, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, platformName=ios, deviceName=iPhone Simulator}, appium-version=1.4.1, platformVersion=8.3, webStorageEnabled=false, locationContextEnabled=false, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, browserName=iOS, takesScreenshot=true, javascriptEnabled=true, platformName=ios}]
+Session ID: 2b0148cf-c3fd-479d-b68a-a8f9f008fbdd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:450)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at appium.tutorial.ios.util.Helpers.element(Helpers.java:53)
+	at appium.tutorial.ios.util.Helpers.text(Helpers.java:102)
+	at appium.tutorial.ios.AutomatingASimpleActionTest.one(AutomatingASimpleActionTest.java:15)
+
+two(appium.tutorial.ios.AutomatingASimpleActionTest)  Time elapsed: 75.575 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.xpath: //UIAStaticText[@visible="true" and (contains(translate(@name,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@hint,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@label,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@value,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton"))]
+Build info: version: '2.42.1', revision: '68b415adb11acca4286be45124325cc36cfc4a51', time: '2014-05-29 09:21:55'
+System info: host: 'XMNA014.local', ip: '10.32.36.58', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_20'
+Driver info: driver.version: unknown
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:450)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at appium.tutorial.ios.util.Helpers.wait(Helpers.java:138)
+	at appium.tutorial.ios.util.AppiumTest.wait(AppiumTest.java:39)
+	at appium.tutorial.ios.AutomatingASimpleActionTest.two(AutomatingASimpleActionTest.java:21)
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="appium.tutorial.ios.AutomatingASimpleActionTest" time="206.264" tests="4" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.20-b23"/>
+    <property name="user.country.format" value="CN"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios"/>
+    <property name="java.runtime.version" value="1.8.0_20-b26"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/ng/6vcfr31n0w5fh83gygt9jq5rnwvdjv/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/bree.lu/Tools/apache-maven-3.2.5/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/bree.lu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/bree.lu"/>
+    <property name="user.timezone" value="Asia/Harbin"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="bree.lu"/>
+    <property name="java.class.path" value="/Users/bree.lu/Tools/apache-maven-3.2.5/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_20"/>
+    <property name="java.ext.dirs" value="/Users/bree.lu/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/bree.lu/Tools/apache-maven-3.2.5"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="one" classname="appium.tutorial.ios.AutomatingASimpleActionTest" time="43.946">
+    <error message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.07 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.42.1&apos;, revision: &apos;68b415adb11acca4286be45124325cc36cfc4a51&apos;, time: &apos;2014-05-29 09:21:55&apos;&#10;System info: host: &apos;XMNA014.local&apos;, ip: &apos;10.32.36.58&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities [{app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, networkConnectionEnabled=false, warnings={}, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, desired={app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, appium-version=1.4.1, platformVersion=8.3, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, platformName=ios, deviceName=iPhone Simulator}, appium-version=1.4.1, platformVersion=8.3, webStorageEnabled=false, locationContextEnabled=false, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, browserName=iOS, takesScreenshot=true, javascriptEnabled=true, platformName=ios}]&#10;Session ID: 2b0148cf-c3fd-479d-b68a-a8f9f008fbdd" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.1', revision: '68b415adb11acca4286be45124325cc36cfc4a51', time: '2014-05-29 09:21:55'
+System info: host: 'XMNA014.local', ip: '10.32.36.58', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_20'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities [{app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, networkConnectionEnabled=false, warnings={}, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, desired={app=/Users/bree.lu/Workspace/testEnvProject/tutorial-master 2/projects/java_ios/UICatalog6.1.app.zip, appium-version=1.4.1, platformVersion=8.3, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, platformName=ios, deviceName=iPhone Simulator}, appium-version=1.4.1, platformVersion=8.3, webStorageEnabled=false, locationContextEnabled=false, name=Java iOS tutorial Tue Jul 21 14:08:39 CST 2015, browserName=iOS, takesScreenshot=true, javascriptEnabled=true, platformName=ios}]
+Session ID: 2b0148cf-c3fd-479d-b68a-a8f9f008fbdd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:450)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at appium.tutorial.ios.util.Helpers.element(Helpers.java:53)
+	at appium.tutorial.ios.util.Helpers.text(Helpers.java:102)
+	at appium.tutorial.ios.AutomatingASimpleActionTest.one(AutomatingASimpleActionTest.java:15)
+</error>
+    <system-out><![CDATA[  test: one
+]]></system-out>
+  </testcase>
+  <testcase name="two" classname="appium.tutorial.ios.AutomatingASimpleActionTest" time="75.575">
+    <error message="Timed out after 60 seconds waiting for visibility of element located by By.xpath: //UIAStaticText[@visible=&quot;true&quot; and (contains(translate(@name,&quot;BUTTONS, VARIOUS USES OF UIBUTTON&quot;,&quot;buttons, various uses of uibutton&quot;), &quot;buttons, various uses of uibutton&quot;) or contains(translate(@hint,&quot;BUTTONS, VARIOUS USES OF UIBUTTON&quot;,&quot;buttons, various uses of uibutton&quot;), &quot;buttons, various uses of uibutton&quot;) or contains(translate(@label,&quot;BUTTONS, VARIOUS USES OF UIBUTTON&quot;,&quot;buttons, various uses of uibutton&quot;), &quot;buttons, various uses of uibutton&quot;) or contains(translate(@value,&quot;BUTTONS, VARIOUS USES OF UIBUTTON&quot;,&quot;buttons, various uses of uibutton&quot;), &quot;buttons, various uses of uibutton&quot;))]&#10;Build info: version: &apos;2.42.1&apos;, revision: &apos;68b415adb11acca4286be45124325cc36cfc4a51&apos;, time: &apos;2014-05-29 09:21:55&apos;&#10;System info: host: &apos;XMNA014.local&apos;, ip: &apos;10.32.36.58&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of element located by By.xpath: //UIAStaticText[@visible="true" and (contains(translate(@name,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@hint,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@label,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton") or contains(translate(@value,"BUTTONS, VARIOUS USES OF UIBUTTON","buttons, various uses of uibutton"), "buttons, various uses of uibutton"))]
+Build info: version: '2.42.1', revision: '68b415adb11acca4286be45124325cc36cfc4a51', time: '2014-05-29 09:21:55'
+System info: host: 'XMNA014.local', ip: '10.32.36.58', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_20'
+Driver info: driver.version: unknown
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:450)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at appium.tutorial.ios.util.Helpers.wait(Helpers.java:138)
+	at appium.tutorial.ios.util.AppiumTest.wait(AppiumTest.java:39)
+	at appium.tutorial.ios.AutomatingASimpleActionTest.two(AutomatingASimpleActionTest.java:21)
+</error>
+    <system-out><![CDATA[  test: two
+]]></system-out>
+  </testcase>
+  <testcase name="four" classname="appium.tutorial.ios.AutomatingASimpleActionTest" time="61.67"/>
+  <testcase name="three" classname="appium.tutorial.ios.AutomatingASimpleActionTest" time="25.073"/>
+</testsuite>
