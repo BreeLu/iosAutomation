@@ -12,13 +12,13 @@ public class AutomatingASimpleActionTest extends AppiumTest {
 
     @org.junit.Test
     public void one() throws Exception {
-        text("Buttons, Various uses of UIButton").click();
+        text("Buttons").click();
         text_exact("Buttons");
     }
 
     @org.junit.Test
     public void two() throws Exception {
-        wait(for_text("Buttons, Various uses of UIButton")).click();
+        wait(for_text("Various uses of UIButton")).click();
         wait(for_text_exact("Buttons"));
     }
 
