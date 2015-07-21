@@ -15,7 +15,6 @@ import org.junit.runner.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.net.URL;
@@ -25,6 +24,13 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumTest implements SauceOnDemandSessionIdProvider {
 
+    public static final String CAPABILITIES_APPIUM_VERSION = "appium-version";
+    public static final String CAPABILITIES_PLATFORM_VERSION = "platformVersion";
+    public static final String CAPABILITIES_PLATFORM_NAME = "platformName";
+    public static final String CAPABILITIES_DEVICE_NAME = "deviceName";
+    public static final String CAPABILITIES_JOB_NAME = "name";
+    public static final String CAPABILITIES_APP = "app";
+    public static final String DEFAULT_WD_HUB_URL = "http://127.0.0.1:4723/wd/hub";
     private AppiumDriver driver;
 
     /**
@@ -84,13 +90,13 @@ public class AppiumTest implements SauceOnDemandSessionIdProvider {
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("appium-version", "1.4.1");
-        capabilities.setCapability("platformVersion", "8.3");
-        capabilities.setCapability("platformName", "ios");
-        capabilities.setCapability("deviceName", "iPhone Simulator");
+        capabilities.setCapability(CAPABILITIES_APPIUM_VERSION, "1.4.1");
+        capabilities.setCapability(CAPABILITIES_PLATFORM_VERSION, "8.3");
+        capabilities.setCapability(CAPABILITIES_PLATFORM_NAME, "ios");
+        capabilities.setCapability(CAPABILITIES_DEVICE_NAME, "iPhone Simulator");
 
         // Set job name on Sauce Labs
-        capabilities.setCapability("name", "Java iOS tutorial " + date);
+        capabilities.setCapability(CAPABILITIES_JOB_NAME, "Java iOS tutorial " + date);
         String userDir = System.getProperty("user.dir");
         String localApp = "UICatalog6.1.app.zip";
         if (runOnSauce) {
@@ -102,13 +108,13 @@ public class AppiumTest implements SauceOnDemandSessionIdProvider {
 
             rest.uploadFile(new File(userDir, localApp), localApp);
 
-            capabilities.setCapability("app", "sauce-storage:" + localApp);
+            capabilities.setCapability(CAPABILITIES_APP, "sauce-storage:" + localApp);
             URL sauceURL = new URL("http://" + user + ":" + key + "@ondemand.saucelabs.com:80/wd/hub");
             driver = new AppiumDriver(sauceURL, capabilities);
         } else {
             String appPath = Paths.get(userDir, localApp).toAbsolutePath().toString();
-            capabilities.setCapability("app", appPath);
-            driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            capabilities.setCapability(CAPABILITIES_APP, appPath);
+            driver = new AppiumDriver(new URL(DEFAULT_WD_HUB_URL), capabilities);
         }
 
         sessionId = driver.getSessionId().toString();

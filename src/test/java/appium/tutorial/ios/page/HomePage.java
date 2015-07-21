@@ -12,7 +12,7 @@ public abstract class HomePage {
      *  Verify the buttons page has loaded. **/
     public static void buttonsClick() {
         loaded();
-        element(MobileBy.AccessibilityId("Buttons, Various uses of UIButton")).click();
+        element(MobileBy.AccessibilityId("Buttons")).click();
         ButtonsPage.loaded();
     }
 
@@ -21,7 +21,7 @@ public abstract class HomePage {
      *  Verify the controls page has loaded. **/
     public static void controlsClick() {
         loaded();
-        element(MobileBy.AccessibilityId("Controls, Various uses of UIControl")).click();
+        element(MobileBy.AccessibilityId("Controls")).click();
         ControlsPage.loaded();
     }
 
